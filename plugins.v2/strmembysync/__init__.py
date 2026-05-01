@@ -18,7 +18,7 @@ class StrmEmbySync(_PluginBase):
     plugin_name = "STRM-Emby同步"
     plugin_desc = "媒体转移完成后自动生成STRM文件并触发Emby刷新。"
     plugin_icon = "https://raw.githubusercontent.com/gaodyoffice/MoviePilot-Plugins/main/icons/refresh.png"
-    plugin_version = "1.1"
+    plugin_version = "1.2"
     plugin_author = "gaodyoffice"
     author_url = "https://github.com/gaodyoffice"
 
@@ -342,6 +342,10 @@ class StrmEmbySync(_PluginBase):
             "auto_refresh_emby": False,
             "emby_refresh_scope": "library",
         }
+
+    def get_page(self) -> List[dict]:
+        """详情页（可选，返回空列表即不显示详情页）"""
+        return []
 
     def get_api(self) -> List[Dict[str, Any]]:
         """插件API"""
