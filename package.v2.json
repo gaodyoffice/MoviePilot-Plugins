@@ -1,0 +1,14 @@
+{
+  "StrmEmbySync": {
+    "name": "STRM-Emby同步",
+    "description": "媒体转移完成后自动生成STRM文件并触发Emby刷新。",
+    "labels": "Emby,STRM,同步",
+    "version": "1.0",
+    "icon": "https://raw.githubusercontent.com/gaodyoffice/MoviePilot-Plugins/main/icons/refresh.png",
+    "author": "thsrite",
+    "level": 1,
+    "history": {
+      "v1.0": "初始版本"
+    }
+  }
+}
