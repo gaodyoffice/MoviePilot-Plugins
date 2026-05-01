@@ -5,7 +5,7 @@ from typing import List, Tuple, Dict, Any, Optional
 from app import schemas
 from app.core.config import settings
 from app.core.event import eventmanager, Event
-from app.helper.media_server import MediaServerHelper
+from app.helper.mediaserver import MediaServerHelper
 from app.log import logger
 from app.plugins import _PluginBase
 from app.schemas.types import EventType
@@ -17,10 +17,10 @@ class StrmEmbySync(_PluginBase):
     # 插件基本信息
     plugin_name = "STRM-Emby同步"
     plugin_desc = "媒体转移完成后自动生成STRM文件并触发Emby刷新。"
-    plugin_icon = "https://raw.githubusercontent.com/thsrite/MoviePilot-Plugins/main/icons/refresh.png"
-    plugin_version = "1.0"
-    plugin_author = "thsrite"
-    author_url = "https://github.com/thsrite"
+    plugin_icon = "https://raw.githubusercontent.com/gaodyoffice/MoviePilot-Plugins/main/icons/refresh.png"
+    plugin_version = "1.1"
+    plugin_author = "gaodyoffice"
+    author_url = "https://github.com/gaodyoffice"
 
     # 插件配置项ID前缀
     plugin_config_prefix = "strm_emby_sync_"
